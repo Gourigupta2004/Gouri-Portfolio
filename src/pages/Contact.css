@@ -1,0 +1,56 @@
+.contact-section {
+  background-color: #0d1b2a;
+  padding: 180px 20px;
+  color: #fff;
+}
+
+.contact-heading {
+  font-size: 2.8rem;
+  color: #00ffff;
+  text-shadow:
+    0 0 5px #00ffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-icon {
+  color: #00ffff;
+  font-size: 2.2rem;
+  transition: 0.3s ease;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff;
+}
+
+.contact-icon:hover {
+  transform: scale(1.3);
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+.contact-email {
+  margin-top: 25px;
+  color: #00ffff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  /* text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff; */
+}
