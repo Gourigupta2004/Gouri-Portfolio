@@ -1,0 +1,71 @@
+.hero-section {
+  background-color: #0d1b2a;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 25px #00ffff80;
+  animation: zoomIn 1.2s ease;
+}
+
+.neon-text {
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.typewriter {
+  color: #9d4edd;
+  font-weight: 600;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.btn-outline-cyan,
+.resume-btn {
+  border: 1.5px solid #00ffff!important;
+  color: #00ffff!important;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-white,
+.contact-btn {
+  border: 1.5px solid #ffffff!important;
+  color: #ffffff!important;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cyan:hover,
+.resume-btn:hover {
+  background-color: #00ffff;
+  color: #0d1b2a;
+  box-shadow: 0 0 12px #00ffffaa;
+}
+.btn-outline-white:hover,
+.contact-btn:hover {
+  background-color: #ffffff;
+  color: #0d1b2a;
+  box-shadow: 0 0 12px #ffffff;
+}

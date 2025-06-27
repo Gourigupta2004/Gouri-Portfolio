@@ -1,0 +1,122 @@
+.custom-navbar {
+  background: rgba(13, 27, 42, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid #00ffff55;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  margin: 20px auto;
+  padding: 12px 30px;
+  max-width: 1100px;
+  transition: all 0.3s ease;
+}
+
+/* Neon Brand */
+.neon-text {
+  color: #00ffff;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-brand{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #00ffff !important;
+}
+
+.navbar-brand:hover{
+  font-family: 'Orbitron', sans-serif;
+  color: black !important;
+    text-shadow: 
+    0 0 4px #00ffff,
+    0 0 8px #00ffff,
+    0 0 12px #00ffff;
+}
+
+.brand-icon {
+  font-size: 1.2rem;
+  color: #00ffff;
+  transition: transform 0.3s ease;
+}
+
+/* Links */
+.nav-link {
+  color: #00ffff !important;
+  margin-left: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: black !important;
+  text-shadow: 0 0 5px #00ffff;
+  font-weight: bold;
+}
+
+/* Resume Button */
+.btn-outline-cyan,
+.resume-btn {
+  border: 1.5px solid #00ffff!important;
+  color: #00ffff!important;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cyan:hover,
+.resume-btn:hover {
+  background-color: #00ffff;
+  color: #0d1b2a;
+  box-shadow: 0 0 12px #00ffffaa;
+}
+
+.navbar-toggler {
+  border: 1.5px solid #00ffff!important;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent; /* Prevents focus outline on mobile */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: 0 0 12px #00ffffaa !important;
+  border-color: #00ffff !important;
+}
+
+.navbar-toggler:hover{
+  background-color: rgba(0, 255, 255, 0.1);
+  border-color: #00ffff;
+  box-shadow: 0 0 12px #00ffffaa!important;
+}
+
+.navbar-toggler:not(.collapsed) {
+  background-color: rgba(0, 255, 255, 0.1);
+  border-color: #00ffff;
+  box-shadow: 0 0 12px #00ffffaa;
+}
+
+.navbar-toggler-icon {
+    all: unset;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300ffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E")!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 1.5em;
+  height: 1.5em;
+}
