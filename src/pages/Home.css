@@ -59,8 +59,8 @@
 
 .btn-outline-cyan:hover,
 .resume-btn:hover {
-  background-color: #00ffff;
-  color: #0d1b2a;
+  background: transparent!important;
+  color:  #00ffffaa!important;
   box-shadow: 0 0 12px #00ffffaa;
 }
 .btn-outline-white:hover,

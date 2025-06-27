@@ -1,0 +1,38 @@
+.project-card {
+  margin-bottom: 80px;
+}
+
+.demo-video {
+  max-width: 100%;
+  border: 3px solid #00ffff;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #00ffff88;
+}
+
+.project-name {
+  font-size: 2rem;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.project-type {
+  font-size: 1.1rem;
+  color: #9d4edd;
+  font-weight: 600;
+}
+
+.btn-outline-cyan {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+
+.btn-outline-cyan:hover {
+  background-color: #00ffff;
+  color: #0d1b2a;
+}
+
+.future-list {
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  color: #c2e9fb;
+}
