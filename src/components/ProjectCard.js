@@ -43,7 +43,13 @@ function ProjectCard({ project, reverse }) {
           <p className="mt-3">{project.description}</p>
           <div className="mt-3">
             <a href={project.github} className="btn btn-outline-cyan me-3" target="_blank" rel="noreferrer">GitHub</a>
-            <a href={project.live} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+
+            {project.live === '#' ? (
+              <span className="btn btn-primary disabled">Live Demo coming soon</span>
+            ) : (
+              <a href={project.live} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+            )}
+
           </div>
               {/* Future Improvements */}
           {project.future && (
