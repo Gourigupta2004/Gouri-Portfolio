@@ -53,7 +53,7 @@ const projectList = [
     type: 'React | Animated UI',
     description: 'This very portfolio you’re exploring now, built with animations, responsive design, and love.',
     github: 'https://github.com/gourigupta/portfolio',
-    live: '#',
+    live: 'https://gouri-personal-portfolio.netlify.app/',
     video: Portfolio,
     future: [
       'Add a blog section to share my coding journey',
