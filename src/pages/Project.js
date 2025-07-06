@@ -1,10 +1,10 @@
 import React from 'react';
 import './Project.css';
 import ProjectCard from '../components/ProjectCard';
-import demoVideo from '../assets/demoVideo.mp4'; // Adjust the path as necessary
 import TextUtils from '../assets/TextUtils.mp4'; // Example video for TextUtils project
 import NewsDose from '../assets/NewsDose.mp4'; // Example video for News Dose project
 import WeatherVibes from '../assets/WeatherVibes.mp4'; // Example video for Weather Vibes project
+import Portfolio from '../assets/Portfolio.mp4'; // Example video for Portfolio project
 
 const projectList = [
   {
@@ -12,7 +12,7 @@ const projectList = [
   type: 'React | NewsData.io | React Router',
   description: 'A real-time news feed app built using React and NewsAPI, showing top headlines by category.',
   github: 'https://github.com/gourigupta/newsapp',
-  live: '#',
+  live: 'https://newsdosedaily.netlify.app/',
   video: NewsDose,
   future: [
     'Add search functionality to find news by keywords',
@@ -54,7 +54,7 @@ const projectList = [
     description: 'This very portfolio you’re exploring now, built with animations, responsive design, and love.',
     github: 'https://github.com/gourigupta/portfolio',
     live: '#',
-    video: demoVideo,
+    video: Portfolio,
     future: [
       'Add a blog section to share my coding journey',
       'Implement a dark mode toggle for better user experience',
