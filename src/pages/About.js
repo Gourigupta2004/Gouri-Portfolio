@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 function About() {
   return (
     <section id="about" className="about-section">
-      <div className="container row ml-0">
+      <div className="container row ml-0" style={{ marginLeft: '0' }}>
         <div className="col-md-4 mt-4 mb-4 mb-md-0" style={{ display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
           <h2 className="about-heading neon-text">ABOUT ME</h2>
         </div>
