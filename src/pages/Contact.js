@@ -13,18 +13,26 @@ function Contact() {
         </p>
 
         <div className="contact-icons mt-4 mb-4">
-          <a href="mailto:gourigupta.dev@gmail.com" target="_blank" rel="noreferrer">
+        <a 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=guptagouri89@gmail.com" 
+        target="_blank" 
+        rel="noreferrer"
+    >
             <FaEnvelope className="contact-icon" />
           </a>
-          <a href="https://github.com/gourigupta" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Gourigupta2004" target="_blank" rel="noreferrer">
             <FaGithub className="contact-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/gourigupta" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/gouri-gupta-a3513424a/" target="_blank" rel="noreferrer">
             <FaLinkedin className="contact-icon" />
           </a>
         </div>
 
-        <p className="contact-email">gourigupta.dev@gmail.com</p>
+        <p className="contact-email">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guptagouri89@gmail.com"
+          style={{ color: '#ccc', textDecoration: 'none' }}>
+          guptagouri89@gmail.com</a>
+        </p>
       </div>
     </section>
   );

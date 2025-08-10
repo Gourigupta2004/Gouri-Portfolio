@@ -43,7 +43,7 @@ function Home() {
               <a href="#projects" className="btn btn-outline-cyan resume-btn me-3">View Projects</a>
               <a href="#contact" className="btn btn-outline-white contact-btn">Contact Me</a>
             </div>
-            <div className="flex my-5 text-light text-start">Coming Soon...MERN stack project deployed on Firebase!</div>
+            <div className="flex my-5 text-light text-start">Coming Soon...AI powered Ecommerce Platform! Smarter. Faster. Unstoppable.</div>
           </div>
         </div>
       </div>

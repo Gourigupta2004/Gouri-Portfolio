@@ -5,8 +5,22 @@ import TextUtils from '../assets/TextUtils.mp4'; // Example video for TextUtils 
 import NewsDose from '../assets/NewsDose.mp4'; // Example video for News Dose project
 import WeatherVibes from '../assets/WeatherVibes.mp4'; // Example video for Weather Vibes project
 import Portfolio from '../assets/Portfolio.mp4'; // Example video for Portfolio project
+import iNotebookDemo from '../assets/InoteBook.mp4'; // Example video for iNotebook project
 
 const projectList = [
+  {
+  name: 'iNotebook',
+  type: 'MERN Stack | MongoDB | Express | React | Node.js',
+  description: 'A secure cloud notebook with user authentication for creating & managing personal notes anywhere.',
+  github: 'https://github.com/Gourigupta2004/cloud-notebook.git',
+  live: 'https://my-cloud-notebook.onrender.com',
+  video: iNotebookDemo,
+  future: [
+    'Integrate AI for smart note suggestions, summaries, & context-based search',
+    'Add rich text editor for advanced formatting',
+    'Enable cloud storage for media and file attachments'
+  ]
+},
   {
   name: 'News App',
   type: 'React | NewsData.io | React Router',
