@@ -4,10 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import TextUtils from '../assets/TextUtils.mp4'; // Example video for TextUtils project
 import NewsDose from '../assets/NewsDose.mp4'; // Example video for News Dose project
 import WeatherVibes from '../assets/WeatherVibes.mp4'; // Example video for Weather Vibes project
-import Portfolio from '../assets/Portfolio.mp4'; // Example video for Portfolio project
 import iNotebookDemo from '../assets/InoteBook.mp4'; // Example video for iNotebook project
-import { BiColor } from 'react-icons/bi';
-import { bottom } from '@popperjs/core';
 
 const projectList = [
   {
@@ -63,21 +60,6 @@ const projectList = [
     'Implement a backend to store user-preferred locations'
   ]
 }
-// ,
-//   {
-//     name: 'Portfolio Website',
-//     type: 'React | Animated UI',
-//     description: 'This very portfolio you’re exploring now, built with animations, responsive design, and love.',
-//     github: 'https://github.com/gourigupta/portfolio',
-//     live: 'https://gouri-personal-portfolio.netlify.app/',
-//     video: Portfolio,
-//     future: [
-//       'Add a blog section to share my coding journey',
-//       'Implement a dark mode toggle for better user experience',
-//       'Enhance SEO for better visibility'
-//     ]   
-//   }
-  // Add more projects here...
 ];
 
 function Project() {
