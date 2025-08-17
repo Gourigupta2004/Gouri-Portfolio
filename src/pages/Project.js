@@ -6,6 +6,8 @@ import NewsDose from '../assets/NewsDose.mp4'; // Example video for News Dose pr
 import WeatherVibes from '../assets/WeatherVibes.mp4'; // Example video for Weather Vibes project
 import Portfolio from '../assets/Portfolio.mp4'; // Example video for Portfolio project
 import iNotebookDemo from '../assets/InoteBook.mp4'; // Example video for iNotebook project
+import { BiColor } from 'react-icons/bi';
+import { bottom } from '@popperjs/core';
 
 const projectList = [
   {
@@ -61,28 +63,29 @@ const projectList = [
     'Implement a backend to store user-preferred locations'
   ]
 }
-,
-  {
-    name: 'Portfolio Website',
-    type: 'React | Animated UI',
-    description: 'This very portfolio you’re exploring now, built with animations, responsive design, and love.',
-    github: 'https://github.com/gourigupta/portfolio',
-    live: 'https://gouri-personal-portfolio.netlify.app/',
-    video: Portfolio,
-    future: [
-      'Add a blog section to share my coding journey',
-      'Implement a dark mode toggle for better user experience',
-      'Enhance SEO for better visibility'
-    ]   
-  }
+// ,
+//   {
+//     name: 'Portfolio Website',
+//     type: 'React | Animated UI',
+//     description: 'This very portfolio you’re exploring now, built with animations, responsive design, and love.',
+//     github: 'https://github.com/gourigupta/portfolio',
+//     live: 'https://gouri-personal-portfolio.netlify.app/',
+//     video: Portfolio,
+//     future: [
+//       'Add a blog section to share my coding journey',
+//       'Implement a dark mode toggle for better user experience',
+//       'Enhance SEO for better visibility'
+//     ]   
+//   }
   // Add more projects here...
 ];
 
 function Project() {
   return (
-    <section id="projects" className="projects-section py-28">
+    <section id="projects" className="projects-section py-18">
       <div className="container">
-        <h2 className="text-center neon-text mb-5">Projects</h2>
+        <h1 className="text-center neon-text mb-5" style={{ color: '#ffff', fontFamily: 'Poppins, sans-serif',
+  fontWeight: 700,  fontSize: '2.8rem', paddingBottom: '3rem'}}>Projects</h1>
         {projectList.map((project, idx) => (
           <ProjectCard key={idx} project={project} reverse={idx % 2 !== 0} />
         ))}

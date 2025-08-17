@@ -1,0 +1,36 @@
+.tech-strip {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 30px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-track {
+  display: flex;
+  gap: 50px;
+  animation: scroll-tech 20s linear infinite;
+}
+
+.tech-icon {
+  font-size: 100px;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  user-select: none;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Move by width of one icon set, not percentage */
+@keyframes scroll-tech {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-calc((100% / 2)));
+  }
+}

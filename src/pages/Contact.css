@@ -1,17 +1,18 @@
 .contact-section {
-  background-color: #0d1b2a;
-  padding: 180px 20px;
+background-color: #0d1b2a;
+  padding: 30px 20px;
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-heading {
   font-size: 2.8rem;
   color: #00ffff;
-  text-shadow:
-    0 0 5px #00ffff;
+  text-shadow: 0 0 4px #00ffff;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-text {
@@ -20,6 +21,7 @@
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-icons {
@@ -33,24 +35,76 @@
   color: #00ffff;
   font-size: 2.2rem;
   transition: 0.3s ease;
-  text-shadow:
-    0 0 5px #00ffff,
-    0 0 10px #00ffff !important;
+  text-shadow: 0 0 5px #00ffff;
 }
 
 .contact-icon:hover {
   transform: scale(1.3);
-  text-shadow:
-    0 0 10px #00ffff,
-    0 0 20px #00ffff !important;
+  text-shadow: 0 0 8px #00ffff;
 }
 
 .contact-email {
   margin-top: 25px;
-  color: #00ffff;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  /* text-shadow:
-    0 0 5px #00ffff,
-    0 0 10px #00ffff; */
+}
+
+.btn-link {
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1f3c88, #2e8b57);
+  color: #fff !important;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 255, 200, 0.25);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-link:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.4);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 100px 20px;
+  }
+}
+
+
+.tech-strip {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.tech-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll-tech 20s linear infinite;
+}
+
+.tech-track img {
+  height: 40px; /* Adjust icon size */
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tech-track img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@keyframes scroll-tech {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

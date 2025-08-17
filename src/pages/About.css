@@ -1,50 +1,76 @@
 .about-section {
-  background-color: #0d1b2a;
-  padding-top: 160px;
+background-color: #0d1b2a;
+  padding-top: 140px;
   padding-bottom: 80px;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Heading Wrapper */
+.about-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Heading with Home.js gradient */
+.about-heading {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1f3c88, #2e8b57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+/* Card Styling */
 .about-card {
-  background: rgba(13, 27, 42, 0.6);
-  border: 2px solid #00ffff;
+  background: rgba(13, 27, 42, 0.85);
   border-radius: 20px;
-  box-shadow: 0 0 30px #00ffff33;
+  box-shadow: 0 0 35px rgba(0, 255, 200, 0.2);
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
   color: #c2e9fb;
+  transition: all 0.3s ease;
+  padding: 2rem;
 }
 
-.about-heading {
-  color: #00ffff;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  font-weight: 500;
-  margin-bottom: 10px;
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 45px rgba(0, 255, 200, 0.35);
 }
 
+/* Name Styling */
 .about-name {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 700;
-  color: #00ffff;
+  background: linear-gradient(135deg, #1f3c88, #2e8b57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Orbitron', sans-serif;
   line-height: 1.2;
-  font-family: 'Orbitron', sans-serif;
-
 }
 
+/* Description Styling */
 .about-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #a0e9f7;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e0f7fa;
   padding: 0 10px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.neon-text {
-  color: #00ffff;
-  font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 1.4rem;
+  }
+  .about-name {
+    font-size: 2.4rem;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
 }
