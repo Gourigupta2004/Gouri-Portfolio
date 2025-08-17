@@ -3,3 +3,10 @@ background-color: #0d1b2a;
   padding-top: 80px;
   padding-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding-top: 40px;   /* reduced from 80px */
+    padding-bottom: 15px; /* reduced from 30px */
+  }
+}

@@ -71,9 +71,10 @@ background-color: #0d1b2a;
 
 @media (max-width: 768px) {
   .contact-section {
-    padding: 100px 20px;
+    padding: 20px 15px;  /* smaller top/bottom + side padding */
   }
 }
+
 
 
 .tech-strip {
@@ -106,5 +107,15 @@ background-color: #0d1b2a;
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+.get-in-touch-heading {
+  margin: 2.5rem; /* default */
+}
+
+@media (max-width: 768px) {
+  .get-in-touch-heading {
+    margin: 1rem; /* reduced margin for mobile */
   }
 }

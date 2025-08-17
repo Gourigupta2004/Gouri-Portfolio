@@ -13,9 +13,17 @@ function Contact() {
 
       <div className="container text-center">
         {/* <h2 className="contact-heading">GET IN TOUCH</h2> */}
-        <h2 className="accent" style={{ fontFamily: 'Poppins, sans-serif',
-  fontWeight: 700,
-  fontSize: '2.8rem', margin: '2.5rem'}}>GET IN TOUCH</h2>
+        <h2
+  className="accent get-in-touch-heading"
+  style={{
+    fontFamily: "Poppins, sans-serif",
+    fontWeight: 700,
+    fontSize: "2.8rem",
+  }}
+>
+  GET IN TOUCH
+</h2>
+
 
         <p className="contact-text">
           I’d love to hear from you—whether it’s a job opportunity, project collaboration, or just a hello!

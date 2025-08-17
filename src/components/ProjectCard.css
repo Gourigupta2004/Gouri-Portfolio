@@ -87,6 +87,23 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .video-wrapper.mx-4 {
+    margin-left: 8px !important;   /* reduced margin */
+    margin-right: 8px !important;  /* reduced margin */
+    width: auto;                   /* allow space for margins */
+    max-width: calc(100% - 16px);  /* keep video inside screen */
+  }
+
+  .demo-video {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
 .future-list {
   padding-left: 1rem;
   font-size: 0.95rem;

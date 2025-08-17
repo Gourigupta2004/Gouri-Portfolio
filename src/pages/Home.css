@@ -1,15 +1,14 @@
 .hero-section {
   display: flex;
   min-height: 100vh;
-background-color: #0d1b2a;
-
+  background-color: #0d1b2a;
 }
 
 /* Left diagonal image background */
 .hero-left {
   width: 100%;
   flex: 1;
-  margin-top: 3.2rem;
+  margin-top: 3.2rem;  /* pushes hero below navbar in desktop */
   clip-path: polygon(0 0, 95% 0, 85% 100%, 0% 100%);
   background-size: cover;
   background-position: center;
@@ -56,13 +55,13 @@ background-color: #0d1b2a;
   background: linear-gradient(135deg, #1f3c88, #2e8b57);
   color: #fff !important;
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 255, 200, 0.25)!important;
+  box-shadow: 0 2px 8px rgba(0, 255, 200, 0.25) !important;
 }
 
 .primary-btn:hover {
   opacity: 0.95;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.4)!important;
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.4) !important;
 }
 
 .secondary-btn {
@@ -94,8 +93,11 @@ background-color: #0d1b2a;
 
   .hero-left {
     clip-path: none;
-    height: 300px;
-    width: 400px;
+    width: 100%;
+    min-height: 250px;   /* ✅ flexible height instead of fixed 600px */
+    margin-top: 60px;    /* ✅ keeps image below navbar */
+    background-size: cover;  /* change to "contain" if you want full image */
+    background-position: center top; /* show top part of image */
   }
 
   .hero-right {

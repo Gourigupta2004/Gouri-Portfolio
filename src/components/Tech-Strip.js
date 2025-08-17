@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaHtml5,
   FaCss3Alt,
@@ -22,14 +22,31 @@ const iconsWithColors = [
 ];
 
 export default function TechStrip() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="tech-strip">
       <div className="tech-track">
-        {[...iconsWithColors, ...iconsWithColors, ...iconsWithColors].map(({ Icon, color }, i) => (
-          <span key={i} className="tech-icon" style={{ color }}>
-            <Icon style={{ fontSize: '60px', marginBottom: '60px' }} />
-          </span>
-        ))}
+        {[...iconsWithColors, ...iconsWithColors, ...iconsWithColors].map(
+          ({ Icon, color }, i) => (
+            <span key={i} className="tech-icon" style={{ color }}>
+              <Icon
+                style={{
+                  fontSize: isMobile ? "50px" : "60px",
+                  marginBottom: isMobile ? "30px" : "60px",
+                }}
+              />
+            </span>
+          )
+        )}
       </div>
     </div>
   );
