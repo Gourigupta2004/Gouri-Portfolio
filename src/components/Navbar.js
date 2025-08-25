@@ -38,9 +38,10 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="btn btn-outline-cyan ms-3 resume-btn"
-                href="/assets/Gouri_Resume.pdf"
-                download
+                className="btn btn-outline-cyan resume-btn"
+
+                href="./Gouri_Resume.pdf"
+                download="Gouri_Resume.pdf"
               >
                 RESUME
               </a>
