@@ -24,7 +24,7 @@ const projectList = [
   name: 'News App',
   type: 'React | NewsData.io | React Router',
   description: 'A real-time news feed app built using React and NewsAPI, showing top headlines by category.',
-  github: 'https://github.com/gourigupta/newsapp',
+  github: 'https://github.com/Gourigupta2004/NewsApp.git',
   live: 'https://newsdosedaily.netlify.app/',
   video: NewsDose,
   future: [
@@ -51,7 +51,7 @@ const projectList = [
   name: 'Weather Vibes',
   type: 'Tailwind | JS | Weather API | Map | Lottie',
   description: 'A weather app with Map built using Vanilla JS, Tailwind, and Lottie animations and deployed on Vercel.',
-  github: 'https://github.com/gourigupta/weather-vibes', // update if needed
+  github: 'https://github.com/Gourigupta2004/Weather-Vibes.git', // update if needed
   live: 'https://weather-vibes-3x77.vercel.app/',
   video: WeatherVibes, // replace with actual video variable if needed
   future: [
